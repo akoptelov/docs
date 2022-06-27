@@ -138,6 +138,10 @@ module DocsNavsTranslations = {
     id: "sidenav.how-zkapps-work",
     defaultMessage: "How zkApps Work",
   };
+  let advancedConcepts = {
+    id: "sidenav.advanced-concepts",
+    defaultMessage: "Advanced Concepts"
+  };
   let onlineCommunities = {
     id: "sidenav.online-communities",
     defaultMessage: "Online Communities",
@@ -412,6 +416,10 @@ module SideNav = {
             title={intl->Intl.formatMessage(simpleAnonymousMessageBoardTutorial)}
             slug="simple-anonymous-message-board-tutorial"
           />
+          <Item
+          title={intl->Intl.formatMessage(advancedConcepts)}
+          slug="advancedConcepts"
+        />
            <Item
             title={intl->Intl.formatMessage(zkAppsAPIReference)}
             slug="snarkyjs-reference"
@@ -668,10 +676,14 @@ module Dropdown = {
             title={intl->Intl.formatMessage(simpleAnonymousMessageBoardTutorial)}
             slug="simple-anonymous-message-board-tutorial"
           />
-        <Item
+          <Item
+          title={intl->Intl.formatMessage(advancedConcepts)}
+          slug="advancedConcepts"
+        />
+          <Item
         title={intl->Intl.formatMessage(zkAppsAPIReference)}
         slug="snarkyjs-reference"
-      />
+        />
         </Section>
         <Item
           title={intl->Intl.formatMessage(troubleshooting)}
